@@ -34,7 +34,7 @@ fetch() {
 CWD=$PWD
 
 input="$CWD/wget-list.txt"
-TARROOT=$CWD$LFSTARS
+
 echo $TARROOT
 
 if test -d "$TARROOT"; then

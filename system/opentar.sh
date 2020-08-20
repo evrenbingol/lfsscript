@@ -8,14 +8,15 @@ number_removed=${arrIN[1]}
 tarfile=${number_removed%.*}
 
 echo "tarfile: $tarfile"
-if [[ $a == ".tar.*" ]] ; then
+
+if [[ $tarfile == ".tar.*" ]] ; then
 	echo "tarfile file not handled correctly"
 	exit
 else
 	tarfile_folder=${tarfile%.tar.*}
 fi
 
-
+echo $LFSSOURCE/$tarfile_folder
 rm -rf $LFSSOURCE/$tarfile_folder
 echo "Extracting : $TARROOT/$tarfile"
 mkdir $LFSSOURCE/$tarfile_folder

@@ -1,8 +1,8 @@
 
 MAKEFLAGS="-j$(nproc)"
-LFS="/mnt/lfs"
-LFSSOURCE=$LFS/source
-LFSTOOLS=$LFS/tools
+LFS=/
+LFSSOURCE=/source
+LFSTOOLS=/tools
 LFSTARS=/tars
 LFS_TGT=$(uname -m)-lfs-linux-gnu
 LFS_TGT32=i686-lfs-linux-gnu
